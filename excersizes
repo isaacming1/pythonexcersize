@@ -1,0 +1,101 @@
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15]
+en = []
+on= []
+for number in numbers:
+    if number % 2 == 0:
+        en.append(number)
+    else:
+        on.append(number)
+print("Even numbers are ", en)
+print("Odd numbers are ", on)
+
+
+
+numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+min = min(numbers)
+av = (1+2+3+4+5+6+7+8+9+10+11+12) / len(numbers)
+max = max(numbers)
+sumofs = sum(numbers)
+print("sum is ", sumofs)
+print("average is ", av)
+print("max is ", max)
+print("min is ", min)
+
+
+
+g = [1, 2, 3, 4, 5, 6, 7]
+y = 2
+found = False
+for x in g:
+    if x == y:
+        found = True
+if found:
+    print (str(y) + " is in list")
+else:
+    print (str(y) + " is in list")
+
+
+
+
+
+
+
+
+
+cc = 0
+vc = 0
+s = "Hello guy"
+v = ['e', 'E', 'i', 'I', 'u', 'U', 'A', 'a', 'O', 'o']
+for q in s:
+    if q.isalpha(): 
+        if q in v:
+            vc += 1
+        else:
+            cc += 1
+print("number of vowels:", vc)
+print("number of consonants:", cc)
+
+
+
+
+
+
+def is_palindrome(s):
+    simple_s = s.replace(" ", "").lower()
+    return simple_s == simple_s[::-1]   //got this and above line online did not know syntax link is below
+st = "hello python"
+if is_palindrome(st):
+    print(st, "is a palindrome")
+else:
+    print(st, "is not a palindrome")
+//https://www.shiksha.com/online-courses/articles/how-to-check-if-a-python-string-is-a-palindrome/
+
+
+
+
+students = [{"name": "Alice", "grades": [85, 90, 78]}, {"name": "Bob", "grades": [95, 82, 98]}, {"name": "Charlie", "grades": [70, 85, 92]}]
+for student in students:
+    a = sum(student["grades"]) / len(student["grades"])
+    print(student["name"] + "'average grade is " + str(a))
+
+
+
+
+
+q = [
+    {"title": "The Shawshank Redemption", "genre": "Drama", "rating": 9.3},
+    {"title": "The Godfather", "genre": "Crime", "rating": 9.2},
+    {"title": "The Dark Knight", "genre": "Action", "rating": 9.0},
+    {"title": "Pulp Fiction", "genre": "Crime", "rating": 8.9},
+    {"title": "Schindler's List", "genre": "Drama", "rating": 8.9}
+]
+
+hr = None
+h = 0 
+for q in q:
+    if q["rating"] > h:
+        h = q["rating"]
+        hr = q
+print("The highest-rated movie is " + hr['title'])
+
+
